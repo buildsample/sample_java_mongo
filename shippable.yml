@@ -4,9 +4,12 @@ jdk:
    - oraclejdk7
    - openjdk6
    - openjdk7
+env:
+ secure: dWjLdeU0IPVFrqPaC4tS6WM1N5thcqIl90z82l4VBeNV9fxpbd8IeE2GT0L35t38qbgwiLsy/VEZ+X24q6KVqPEjfZzySj7IPOklMZJQMjagH9enlgJ+mFzvRJtDPTwwmtBhJvt0o+2zm/SUGplEo45/bbk+lZgYrZ5QFmzHTozzfufK4o3wkja3/Wbf/j0gYRajLf+vTLliW0JsNiRmoUPqLTb+fQcZ6ddxAfaZzcaJYd8P4ABzKA/I+G98Z6nOvfoMAfGiroX2KuehuR+cqIsD6RLIrPoN93kzprfNlQq3pocN9w9vTuWVXcleMrtTtsYoGy6udH1JR6lIL2GjWQ==
 services:
    - mongodb
 script:
+   - $secret
    - ant clean
    - ant coverage
 notifications:
