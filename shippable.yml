@@ -5,11 +5,14 @@ jdk:
    - openjdk6
    - openjdk7
 env:
- secure: dWjLdeU0IPVFrqPaC4tS6WM1N5thcqIl90z82l4VBeNV9fxpbd8IeE2GT0L35t38qbgwiLsy/VEZ+X24q6KVqPEjfZzySj7IPOklMZJQMjagH9enlgJ+mFzvRJtDPTwwmtBhJvt0o+2zm/SUGplEo45/bbk+lZgYrZ5QFmzHTozzfufK4o3wkja3/Wbf/j0gYRajLf+vTLliW0JsNiRmoUPqLTb+fQcZ6ddxAfaZzcaJYd8P4ABzKA/I+G98Z6nOvfoMAfGiroX2KuehuR+cqIsD6RLIrPoN93kzprfNlQq3pocN9w9vTuWVXcleMrtTtsYoGy6udH1JR6lIL2GjWQ==
+ global:
+ - secure: EtnJxsyFq9F/fRakQbncFDW7zJ7oUGEGw0BWjNmVPodL1V4e0x/HpmNNK15crd7SDsaltzn/DN9D/4pvAns8NJcuFumP+yvvpPLBi1yaTBM8XWElkkDMmk9hQR+LWXvKGbNagvSpYUX6AgvZF8rrlcFobZ56EhO/KDeddE2ISK7ZrEamcUGLKMXwfNXp8ooPrErr7P8Qy6i4cBatblwyKm64CdKTk0D4wazblha4m7iqhw2a1mDCAvFZLszV4I87fV6Gr2m7R6hG0FoIt+foi2oCNEv5UdDiwRb9M5nghzPI6IGP9rqAi9SNdd58zes7uSaqhwH/C+fnddu2wniekw==
+ - secure: dWjLdeU0IPVFrqPaC4tS6WM1N5thcqIl90z82l4VBeNV9fxpbd8IeE2GT0L35t38qbgwiLsy/VEZ+X24q6KVqPEjfZzySj7IPOklMZJQMjagH9enlgJ+mFzvRJtDPTwwmtBhJvt0o+2zm/SUGplEo45/bbk+lZgYrZ5QFmzHTozzfufK4o3wkja3/Wbf/j0gYRajLf+vTLliW0JsNiRmoUPqLTb+fQcZ6ddxAfaZzcaJYd8P4ABzKA/I+G98Z6nOvfoMAfGiroX2KuehuR+cqIsD6RLIrPoN93kzprfNlQq3pocN9w9vTuWVXcleMrtTtsYoGy6udH1JR6lIL2GjWQ==
 services:
    - mongodb
 script:
    - echo $secret
+   - echo $secret1
    - ant clean
    - ant coverage
 notifications:
