@@ -9,7 +9,7 @@ env:
 services:
    - mongodb
 script:
-   - $secret
+   - echo $secret
    - ant clean
    - ant coverage
 notifications:
