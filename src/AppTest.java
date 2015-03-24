@@ -9,7 +9,7 @@ public class AppTest extends TestCase {
     // put common setup code in here
     try {
       App app = new App();
-      app.insertData("Seattle", "WA");
+      app.insertData("seattle", "WA");
     } catch (Exception e) {
       System.out.println("Error setting up database for test");
     } 
@@ -28,7 +28,7 @@ public class AppTest extends TestCase {
     } catch (Exception e) {
       System.out.println("Error testing database");
     } finally {
-      assertEquals("Seattl, BA", result[0]);
+      assertEquals("Seattle, WA", result[0]);
     }
   } 
 
@@ -41,7 +41,7 @@ public class AppTest extends TestCase {
     } catch (Exception e) {
       System.out.println("Error testing database");
     } finally {
-      assertEquals("Sattle, WA", result[0]);
+      assertEquals("Seattle, WA", result[0]);
     }
   } 
 
@@ -54,7 +54,7 @@ public class AppTest extends TestCase {
     } catch (Exception e) {
       System.out.println("Error testing database");
     } finally {
-      assertEquals("Seattle, AA", result[0]);
+      assertEquals("Seattle, WA", result[0]);
     }
   } 
 }
