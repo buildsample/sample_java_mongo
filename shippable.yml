@@ -2,6 +2,7 @@ language: java
 
 
 env:
+ - secure: ddNl13yR3t9GWBsXomSRfRX89STN5qotoCdbJMGIZEMFKunhgUzRsnj4te9Q/DdYX+9XMbdiBLf9WIK6x7B9bfXIxwWGDihdbbNhthhBSS6vkbAnOkZ3WNbe6CVOwUBzdBATQNq9N5LxHnxW7SA9hAEIlzLZP72kkV953zXc0b7U6Rd+7zLzDmCn31Z7LxWa3ZFCeYM9nJuZ7Xk2Tdses83FNoSgD47xwShj1/kEheNN3hf3/a+ESimkDsN79F0FGJOntFkR6GhrfNNTFXocUnSUb3Z3/H2p2kwuT7ckvRDwtMAU9ZJff1cwHs22opLXAhRD5URTZhxhbtZY2ZRYFw==
  - secure: IMQ5dkY8PFm3vU858yq5yYAlEj263vyRdcHZp32hnsc9j3dcV5RuhWolFlOW7V3jGIbwzBY4SStGwwG3Yq7Wpkqg/hpRbFmXFA0r83DBlK+zIog4elynH8Qu1/gXPGb7YN0PVewYBJLH6afFjPNX4jmew4EUn8TffpBJhmKSXu03y8IglecgSUhVzXT1+AxX/Z6jB6RSoexvgOAUuEgl6Mp0oNUjMg595i3qW6tkmnRUQRSHoM8b3wOXFjlaur2z8hQuPyGCyKGAwg0vKmMkZc+NOJIDtbssAJwwi5JkqAdTJ4Az5cWKrkBmIuo0ceBJ9WLSWARSQt8gbGm6qliWeQ==
  - FOO=bar
 #build_image: shippable/minv2:beta
@@ -21,7 +22,7 @@ script:
    
 after_script:
    - cp README.md ./shippable  
-  # - echo $test1 and $test2
+   - echo $test1 and $beta
 
 archive: true
 
@@ -35,6 +36,7 @@ branches:
     - test#20
     - test#2020
     - test/2020
+    - new01
 
 parallelized_test: true
 
