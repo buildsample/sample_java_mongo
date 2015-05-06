@@ -30,11 +30,6 @@ after_success:
 after_failure:
 - echo "failed"
 
-branches:
-  only:
-    - test#20
-    - test#2020
-    - test/2020
 
 parallelized_test: true
 
