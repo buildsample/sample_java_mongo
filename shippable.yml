@@ -6,14 +6,17 @@ env:
  - FOO=bar
 #build_image: shippable/minv2:beta
 
+
 jdk:
    - oraclejdk7
    - openjdk7
    - openjdk6
    - oraclejdk8
+ 
   
 services:
    - mongodb
+ 
    
 script:
    - ant clean
@@ -26,9 +29,9 @@ after_script:
 archive: true
 
 after_success:
-- echo "success"
+   - echo "success"
 after_failure:
-- echo "failed"
+   - echo "failed"
 
 branches:
   only:
