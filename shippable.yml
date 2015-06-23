@@ -8,9 +8,9 @@ env:
 
 jdk:
    - oraclejdk7
-   - openjdk7
-   - openjdk6
-   - oraclejdk8
+  # - openjdk7
+  # - openjdk6
+  # - oraclejdk8
   
 services:
    - mongodb
@@ -24,7 +24,7 @@ after_script:
 
   # - echo $test1 and $test2
 
-archive: true
+#archive: true
 
 after_success:
 - echo "success"
