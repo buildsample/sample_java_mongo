@@ -1,6 +1,6 @@
-language: java-test
+language: java
 
-jdk:
+jdk
    - oraclejdk7
    - openjdk6
    - openjdk7
