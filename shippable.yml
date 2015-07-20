@@ -34,6 +34,7 @@ branches:
     - test#20
     - test#2020
     - test/2020
+    - new-br
 
 parallelized_test: true
 
