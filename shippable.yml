@@ -13,8 +13,6 @@ script:
    - ant coverage
    - phpunit
 
-
-
 branches:
   only:
     - only-test
