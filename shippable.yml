@@ -2,7 +2,7 @@ language: java
 
 jdk:
    - oraclejdk7
-   - openjdk6
+ #  - openjdk6
    - openjdk7
 
 services:
@@ -19,3 +19,11 @@ branches:
   only:
     - only-test
     - master
+notifications:
+  email:
+    recipients:
+      - vidya@shippable.com
+      - buildsampletest@gmail.com
+# - vidyac.raghav@gmail.com
+    on_success: change
+    on_failure: always
