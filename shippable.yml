@@ -1,5 +1,6 @@
 language: java
 
+
 jdk:
    - oraclejdk7
  #  - openjdk6
@@ -15,7 +16,7 @@ script:
 
 after_script:
 - cp README.md ./shippable
-# - echo $test1 and $test2
+ - echo $test1 and $test2
 archive: true
 
 after_success:
