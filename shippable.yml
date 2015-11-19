@@ -12,11 +12,12 @@ services:
 script:
    - ant clean
    - ant coverage
+   - phpunit
   
 
 after_script:
-- cp README.md ./shippable
- - echo $test1 and $test2
+  - cp README.md ./shippable
+  - echo $test1 and $test2
 archive: true
 
 after_success:
