@@ -11,7 +11,7 @@ services:
 script:
    - ant clean
    - ant coverage
-   - phpunit
+  
 
 after_script:
 - cp README.md ./shippable
