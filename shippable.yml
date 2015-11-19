@@ -13,6 +13,19 @@ script:
    - ant coverage
    - phpunit
 
+after_script:
+- cp README.md ./shippable
+# - echo $test1 and $test2
+archive: true
+
+after_success:
+  - echo "success"
+  
+after_failure:
+  - echo "failed"
+
+
+
 branches:
   only:
     - only-test
