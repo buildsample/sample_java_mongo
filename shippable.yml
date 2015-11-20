@@ -12,7 +12,7 @@ services:
 script:
    - ant clean
    - ant coverage
-   - phpunit
+ #  - phpunit
   
 
 after_script:
