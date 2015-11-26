@@ -1,6 +1,5 @@
 language: java
 
-
 jdk:
    - oraclejdk7
  #  - openjdk6
@@ -38,5 +37,5 @@ notifications:
       - vidya@shippable.com
       - buildsampletest@gmail.com
 # - vidyac.raghav@gmail.com
-    on_success: change
-    on_failure: always
+    on_success: always
+    on_failure: change
