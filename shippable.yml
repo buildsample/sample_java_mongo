@@ -31,6 +31,7 @@ branches:
   only:
     - only-test
     - master
+    
 notifications:
   email:
     recipients:
@@ -38,4 +39,4 @@ notifications:
       - buildsampletest@gmail.com
 # - vidyac.raghav@gmail.com
     on_success: always
-    on_failure: change
+    on_failure: always
