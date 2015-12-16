@@ -5,6 +5,7 @@ env:
  - FOO=bar
 #build_image: shippable/minv2:beta
 
+
 jdk:
    - oraclejdk7
    - openjdk7
