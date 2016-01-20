@@ -37,4 +37,4 @@ notifications:
       - buildsampletest@gmail.com
 # - vidyac.raghav@gmail.com
     on_success: never
-    on_failure: always
+    on_failure: never
